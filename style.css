@@ -1,0 +1,21 @@
+.project {
+  background: #fff;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.project h3 {
+  color: #1a73e8;
+  margin-bottom: 0.5rem;
+}
+
+.project ul {
+  margin-left: 1.2rem;
+  list-style: disc;
+}
+
+.project p {
+  margin-top: 0.5rem;
+}

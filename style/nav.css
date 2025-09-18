@@ -1,0 +1,75 @@
+/* Navigation & Header */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--nav-height);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+  background: var(--bg-white);
+  box-shadow: var(--shadow);
+  border-radius: var(--border-radius);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.nav-brand {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--main-color);
+  letter-spacing: 1px;
+}
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+.nav-links li a {
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color var(--transition);
+}
+.nav-links li a:hover,
+.nav-links li a.active {
+  border-color: var(--accent-color);
+}
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.nav-toggle span {
+  width: 28px;
+  height: 3px;
+  background: var(--main-color);
+  border-radius: 2px;
+  transition: all var(--transition);
+}
+.hero {
+  max-width: var(--max-width);
+  margin: 48px auto 32px auto;
+  text-align: center;
+  padding: 32px 16px;
+  background: linear-gradient(90deg, var(--main-color) 60%, var(--accent-color) 100%);
+  color: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+.hero h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+.hero p {
+  font-size: 1.15rem;
+  font-weight: 500;
+  max-width: 600px;
+  margin: 0 auto;
+}

@@ -1,0 +1,80 @@
+/* Sektionen: About, Skills, Projekte, Kontakt */
+.section {
+  max-width: var(--max-width);
+  margin: 0 auto 48px auto;
+  padding: 32px 16px;
+  background: var(--bg-white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+.section h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: var(--main-color);
+  letter-spacing: 0.5px;
+}
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.profile-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 12px rgba(31,182,255,0.12);
+}
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  list-style: none;
+}
+.skills-list li {
+  background: var(--bg-light);
+  color: var(--main-color);
+  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: 24px;
+  font-size: 1rem;
+  box-shadow: 0 1px 6px rgba(31,182,255,0.08);
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #e0e7ef;
+  font-size: 1rem;
+  background: var(--bg-light);
+  color: var(--text-dark);
+  transition: border-color var(--transition);
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--main-color);
+  outline: none;
+}
+.contact-info {
+  font-size: 1rem;
+  color: var(--text-light);
+}
+.contact-info a { color: var(--accent-color); }
+.footer {
+  text-align: center;
+  padding: 24px 0;
+  color: var(--text-light);
+  font-size: 0.95rem;
+  background: var(--bg-white);
+  margin-top: 32px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}

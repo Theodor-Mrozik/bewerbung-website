@@ -5,8 +5,17 @@
   padding: 2rem 1rem;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   color: #222;
+}
 
-#projects.container {
+#projects .container {
+  border-radius: 14px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  margin-bottom: 32px;
+  padding: 28px 24px;
+  transition: box-shadow 0.2s;
+  border-left: 6px solid #4f46e5;
+}
+
 .section-title {
   font-size: 1.6rem;
   background: linear-gradient(90deg,#818cf8,#6366f1);
@@ -19,13 +28,6 @@
   margin-bottom: 1.25rem;
   border: 2px solid #6366f1;
   box-shadow: 0 6px 18px rgba(15, 35, 64, 0.06);
-}
-  border-radius: 14px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
-  margin-bottom: 32px;
-  padding: 28px 24px;
-  transition: box-shadow 0.2s;
-  border-left: 6px solid #4f46e5;
 }
 .project-card:hover {
   box-shadow: 0 6px 32px rgba(79,70,229,0.12);
@@ -108,14 +110,9 @@
 }
 .btn-outline:hover {
   background: #eef2ff;
-.btn-outline {
-  background: #fff;
-  color: #6366f1;
-  border: 2px solid #6366f1;
-  box-shadow: none;
+  color: #3730a3;
+  border-color: #3730a3;
 }
-.btn-outline:hover {
-  background: #eef2ff;
   color: #3730a3;
   border-color: #3730a3;
 }

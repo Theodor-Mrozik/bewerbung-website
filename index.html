@@ -1,62 +1,116 @@
-
-<!-- ===== Hero Header ===== -->
-<header style="width:100%;background:linear-gradient(90deg,#6c63ff 60%,#00c9b7 100%);padding:48px 0 32px 0;text-align:center;color:#fff;">
-  <h1 style="font-size:2.8rem;font-weight:800;letter-spacing:1px;margin-bottom:12px;">Theodor Mrozik</h1>
-  <p style="font-size:1.25rem;font-weight:500;max-width:600px;margin:0 auto 18px auto;">Innovative Projekte & Data Science | Bewerbung für Aumovio</p>
-</header>
-
-<!-- ===== Projekte Section ===== -->
-<section id="projects" class="container">
-  <h2 class="section-title">Projekte</h2>
-
-  <!-- Jugend forscht -->
-  <article class="project-card">
-    <header class="project-header">
-      <h3 class="project-title">🥈 Jugend forscht — 2. Platz (Regionalwettbewerb Hannover, 2025)</h3>
-      <span class="badge">Mathematik / Informatik</span>
-    </header>
-
-    <p class="project-summary">
-      <strong>Projekt:</strong> <em>„Mit Telegram zum Millionär“</em><br>
-      Entwicklung eines automatisierten Analyse- und Testsystems, das Handelssignale aus Telegram-Tradinggruppen extrahiert, in einem Demokonto abbildet und die Performance gegenüber etablierten Indizes vergleicht.
-    </p>
-
-    <ul class="project-list">
-      <li>Konzeption und Implementierung eines Python-Bots zur Echtzeit-Auswertung und Ausführung von Signalen (u. a. Telethon).</li>
-      <li>Datenaufbereitung, Performance-Analyse und statistischer Vergleich mit Marktindizes (z. B. S&P 500).</li>
-      <li>Ergebnis: Kritische Bewertung von Social-Media-Signalen; Erkenntnisse zu Risiko und Nachhaltigkeit solcher Strategien.</li>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theodor Mrozik – Bewerbung KI & Data Science</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">Theodor Mrozik</div>
+    <ul class="nav-links">
+      <li><a href="#about">Über mich</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projekte</a></li>
+      <li><a href="#contact">Kontakt</a></li>
     </ul>
+    <button class="nav-toggle" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-    <p class="project-role"><strong>Meine Rolle:</strong> Projektleitung, Implementierung (Python), Datenanalyse, Präsentation der Ergebnisse.</p>
+  <header class="hero">
+    <h1>Bewerbung: Bachelor Künstliche Intelligenz & Data Science</h1>
+    <p>Innovative Projekte, analytisches Denken und Leidenschaft für Technologie – das bringe ich mit!</p>
+  </header>
 
-    <div class="project-links">
-      <a class="btn" href="#" target="_blank" rel="noopener">Projektbeschreibung (PDF)</a>
-      <a class="btn btn-outline" href="#" target="_blank" rel="noopener">Quellcode / Repos (GitHub)</a>
-    </div>
-  </article>
+  <main>
+    <section id="about" class="section">
+      <h2>Über mich</h2>
+      <div class="about-content">
+        <img src="profil.jpg" alt="Profilbild" class="profile-img">
+        <div>
+          <p>Ich bin Theodor Mrozik, begeisterter Data Science- und KI-Enthusiast. Meine Stärken liegen in analytischem Denken, kreativer Problemlösung und der Umsetzung innovativer Projekte mit Python und modernen Technologien.</p>
+        </div>
+      </div>
+    </section>
 
-  <!-- Dino Experiment -->
-  <article class="project-card">
-    <header class="project-header">
-      <h3 class="project-title">🤖 Experimentelles KI-Projekt — Chrome Dino Game</h3>
-      <span class="badge">Machine Learning (Experiment)</span>
-    </header>
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Python (Pandas, NumPy, scikit-learn)</li>
+        <li>Machine Learning & KI</li>
+        <li>Datenanalyse & Visualisierung</li>
+        <li>Webentwicklung (HTML, CSS, JavaScript)</li>
+        <li>Git & GitHub</li>
+        <li>Präsentation & Kommunikation</li>
+      </ul>
+    </section>
 
-    <p class="project-summary">
-      Erste praktische Experimente mit Grundlagen des maschinellen Lernens: Aufbau eines einfachen Agenten, der durch Interaktion mit der Spielumgebung lernt.
-    </p>
+    <section id="projects" class="section">
+      <h2>Projekte</h2>
+      <div class="projects-grid">
+        <!-- Projekt 1 -->
+        <div class="project-card">
+          <h3>Jugend forscht – Mit Telegram zum Millionär</h3>
+          <p class="project-desc">Automatisiertes Analyse- und Testsystem für Handelssignale aus Telegram-Tradinggruppen. Kritische Bewertung von Social-Media-Signalen und deren Nachhaltigkeit.</p>
+          <ul class="tech-list">
+            <li>Python</li>
+            <li>Telethon</li>
+            <li>Pandas</li>
+            <li>Statistik</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" class="btn" target="_blank">PDF</a>
+            <a href="#" class="btn btn-outline" target="_blank">GitHub</a>
+          </div>
+        </div>
+        <!-- Projekt 2 -->
+        <div class="project-card">
+          <h3>KI-Experiment – Chrome Dino Game Agent</h3>
+          <p class="project-desc">Prototypischer KI-Agent, der das Chrome Dino Game mittels Reinforcement Learning spielt. Fokus auf Lernmechanismen und Modell-Training.</p>
+          <ul class="tech-list">
+            <li>Python</li>
+            <li>Machine Learning</li>
+            <li>OpenAI Gym (Experimentell)</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" class="btn" target="_blank">Demo</a>
+            <a href="#" class="btn btn-outline" target="_blank">GitHub</a>
+          </div>
+        </div>
+        <!-- Weitere Projekte können hier ergänzt werden -->
+      </div>
+    </section>
 
-    <ul class="project-list">
-      <li>Explorative Arbeit mit Lernparadigmen (z. B. Verstärkendes Lernen) zur Steuerung eines Spielagents.</li>
-      <li>Prototypische Implementierungen und Tests zur Verhaltensoptimierung; Fokus auf Verständnis von Lernmechanismen statt auf Produktionstauglichkeit.</li>
-      <li>Technologien: Python (Prototyping), experimentelle Nutzung von ML-Bibliotheken.</li>
-    </ul>
+    <section id="contact" class="section">
+      <h2>Kontakt</h2>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="E-Mail" required>
+        <textarea name="message" rows="4" placeholder="Nachricht" required></textarea>
+        <button type="submit" class="btn">Absenden</button>
+      </form>
+      <div class="contact-info">
+        <p>E-Mail: <a href="mailto:theodor.mrozik@email.de">theodor.mrozik@email.de</a></p>
+        <p>LinkedIn: <a href="#" target="_blank">Profil ansehen</a></p>
+      </div>
+    </section>
+  </main>
 
-    <p class="project-role"><strong>Was ich gelernt habe:</strong> Grundprinzipien von Agent-Environment-Interaktionen, Modell-Training/Testing-Zyklen, Debugging von Lernalgorithmen.</p>
+  <footer class="footer">
+    <p>&copy; 2025 Theodor Mrozik</p>
+  </footer>
 
-    <div class="project-links">
-      <a class="btn" href="#" target="_blank" rel="noopener">Kurze Demo / Notizen</a>
-      <a class="btn btn-outline" href="#" target="_blank" rel="noopener">Experiment-Repo (GitHub)</a>
-    </div>
-  </article>
-</section>
+  <script>
+    // Responsive Navigation Toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-open');
+      navToggle.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

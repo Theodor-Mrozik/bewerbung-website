@@ -1,24 +1,56 @@
-<section id="projects">
-  <h2>Projekte</h2>
+<!-- ===== Projekte Section (einfügen in index.html) ===== -->
+<section id="projects" class="container">
+  <h2 class="section-title">Projekte</h2>
 
-  <div class="project">
-    <h3>🥈 Jugend forscht – 2. Platz (Regionalwettbewerb Hannover)</h3>
-    <p><strong>Projekt:</strong> <em>„Mit Telegram zum Millionär“</em> (2025, Fachgebiet Mathematik/Informatik)</p>
-    <ul>
-      <li>Entwicklung eines <strong>Python-Algorithmus</strong>, der Handelssignale aus Telegram-Gruppen automatisch ausführt.</li>
-      <li>Vergleich der Ergebnisse mit etablierten Marktindizes (z. B. S&P 500).</li>
-      <li>Analyse zeigte, dass Social-Media-Trading langfristig nicht mit diversifizierten Strategien mithalten kann.</li>
-    </ul>
-    <p><strong>Meine Rolle:</strong> Implementierung mit Python & Telethon, Datenanalyse, Ergebnisaufbereitung.</p>
-  </div>
+  <!-- Jugend forscht -->
+  <article class="project-card">
+    <header class="project-header">
+      <h3 class="project-title">🥈 Jugend forscht — 2. Platz (Regionalwettbewerb Hannover, 2025)</h3>
+      <span class="badge">Mathematik / Informatik</span>
+    </header>
 
-  <div class="project">
-    <h3>🤖 KI-Projekt mit PyTorch – Chrome Dino Game</h3>
-    <ul>
-      <li>Entwicklung eines <strong>KI-Agenten</strong> mit PyTorch, der das bekannte Dino-Spiel im Google Chrome Browser spielt.</li>
-      <li>Einsatz von Reinforcement Learning (Deep Q-Learning) zur Optimierung.</li>
-      <li>Das Modell konnte komplexe Spielsequenzen erfolgreich meistern.</li>
+    <p class="project-summary">
+      <strong>Projekt:</strong> <em>„Mit Telegram zum Millionär“</em><br>
+      Entwicklung eines automatisierten Analyse- und Testsystems, das Handelssignale aus Telegram-Tradinggruppen extrahiert, in einem Demokonto abbildet und die Performance gegenüber etablierten Indizes vergleicht.
+    </p>
+
+    <ul class="project-list">
+      <li>Konzeption und Implementierung eines Python-Bots zur Echtzeit-Auswertung und Ausführung von Signalen (u. a. Telethon).</li>
+      <li>Datenaufbereitung, Performance-Analyse und statistischer Vergleich mit Marktindizes (z. B. S&P 500).</li>
+      <li>Ergebnis: Kritische Bewertung von Social-Media-Signalen; Erkenntnisse zu Risiko und Nachhaltigkeit solcher Strategien.</li>
     </ul>
-    <p><strong>Technologien:</strong> Python, PyTorch, Reinforcement Learning</p>
-  </div>
+
+    <p class="project-role"><strong>Meine Rolle:</strong> Projektleitung, Implementierung (Python), Datenanalyse, Präsentation der Ergebnisse.</p>
+
+    <div class="project-links">
+      <!-- ersetze # durch echte Links -->
+      <a class="btn" href="#" target="_blank" rel="noopener">Projektbeschreibung (PDF)</a>
+      <a class="btn btn-outline" href="#" target="_blank" rel="noopener">Quellcode / Repos (GitHub)</a>
+    </div>
+  </article>
+
+  <!-- Dino Experiment -->
+  <article class="project-card">
+    <header class="project-header">
+      <h3 class="project-title">🤖 Experimentelles KI-Projekt — Chrome Dino Game</h3>
+      <span class="badge">Machine Learning (Experiment)</span>
+    </header>
+
+    <p class="project-summary">
+      Erste praktische Experimente mit Grundlagen des maschinellen Lernens: Aufbau eines einfachen Agenten, der durch Interaktion mit der Spielumgebung lernt.
+    </p>
+
+    <ul class="project-list">
+      <li>Explorative Arbeit mit Lernparadigmen (z. B. Verstärkendes Lernen) zur Steuerung eines Spielagents.</li>
+      <li>Prototypische Implementierungen und Tests zur Verhaltensoptimierung; Fokus auf Verständnis von Lernmechanismen statt auf Produktionstauglichkeit.</li>
+      <li>Technologien: Python (Prototyping), experimentelle Nutzung von ML-Bibliotheken.</li>
+    </ul>
+
+    <p class="project-role"><strong>Was ich gelernt habe:</strong> Grundprinzipien von Agent-Environment-Interaktionen, Modell-Training/Testing-Zyklen, Debugging von Lernalgorithmen.</p>
+
+    <div class="project-links">
+      <a class="btn" href="#" target="_blank" rel="noopener">Kurze Demo / Notizen</a>
+      <a class="btn btn-outline" href="#" target="_blank" rel="noopener">Experiment-Repo (GitHub)</a>
+    </div>
+  </article>
 </section>

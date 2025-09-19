@@ -3,7 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Theodor Mrozik – Bewerbung KI & Data Science</title>
+  <title>Theodor Mrozik – Bewerbung Informatik</title>
+  <meta name="description" content="Portfolio von Theodor Mrozik, einem Informatik-Studenten mit Leidenschaft für Data Science, KI und innovative Softwareentwicklung.">
+  <meta name="author" content="Theodor Mrozik">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://theodor-mrozik.github.io/bewerbung-website/">
+  <meta property="og:title" content="Theodor Mrozik – Bewerbungsportfolio">
+  <meta property="og:description" content="Portfolio von Theodor Mrozik, einem Informatik-Studenten mit Leidenschaft für Data Science, KI und innovative Softwareentwicklung.">
+  <meta property="og:image" content="https://theodor-mrozik.github.io/bewerbung-website/assets/social-preview.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://theodor-mrozik.github.io/bewerbung-website/">
+  <meta property="twitter:title" content="Theodor Mrozik – Bewerbungsportfolio">
+  <meta property="twitter:description" content="Portfolio von Theodor Mrozik, einem Informatik-Studenten mit Leidenschaft für Data Science, KI und innovative Softwareentwicklung.">
+  <meta property="twitter:image" content="https://theodor-mrozik.github.io/bewerbung-website/assets/social-preview.png">
+
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -11,6 +32,7 @@
   <link rel="stylesheet" href="style/nav.css">
   <link rel="stylesheet" href="style/sections.css">
   <link rel="stylesheet" href="style/cards.css">
+  <link rel="stylesheet" href="style/footer.css">
 </head>
 <body>
   <nav class="navbar">
@@ -31,13 +53,13 @@
     </div>
   </nav>
 
-  <header class="hero">
-    <h1>Bewerbung: Bachelor Künstliche Intelligenz & Data Science</h1>
+  <header class="hero hidden">
+    <h1>Bewerbung: Bachelor Informatik</h1>
     <p>Innovative Projekte, analytisches Denken und Leidenschaft für Technologie – das bringe ich mit!</p>
   </header>
 
   <main>
-    <section id="facts" class="section facts">
+    <section id="facts" class="section facts hidden">
       <ul class="facts-list">
         <li><span>📍</span> Region Hannover</li>
         <li><span>🎓</span> Studienstart 2025</li>
@@ -45,18 +67,18 @@
         <li><span>👥</span> Kontakt: Freund bei aumovio (gleiches duales Studium)</li>
       </ul>
     </section>
-    <section id="about" class="section">
+    <section id="about" class="section hidden">
       <h2>Über mich</h2>
       <div class="about-content">
         <img src="profil.jpg" alt="Profilbild" class="profile-img">
         <div class="about-text-content">
-          <p>Ich bin Theodor Mrozik, begeisterter Data Science- und KI-Enthusiast. Meine Stärken liegen in analytischem Denken, kreativer Problemlösung und der Umsetzung innovativer Projekte mit Python und modernen Technologien.</p>
+          <p>Ich bin Theodor Mrozik, begeisterter Informatik-Student. Meine Stärken liegen in analytischem Denken, kreativer Problemlösung und der Umsetzung innovativer Projekte mit Python und modernen Technologien.</p>
           <a href="/lebenslauf.pdf" class="btn cv-btn" target="_blank">Lebenslauf als PDF</a>
         </div>
       </div>
     </section>
 
-    <section id="motivation" class="section">
+    <section id="motivation" class="section hidden">
       <h2>Warum Aumovio?</h2>
       <ul class="motivation-list">
         <li>
@@ -71,7 +93,7 @@
       </ul>
     </section>
 
-    <section id="skills" class="section">
+    <section id="skills" class="section hidden">
       <h2>Skills</h2>
       <ul class="skills-list">
         <li>Python (Pandas, NumPy, PyTorch)</li>
@@ -84,7 +106,7 @@
       </ul>
     </section>
 
-    <section id="education" class="section">
+    <section id="education" class="section hidden">
       <h2>Bildung</h2>
       <div class="about-content">
         <div>
@@ -94,11 +116,11 @@
       </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="projects" class="section hidden">
       <h2>Projekte</h2>
       <div class="projects-grid">
         <!-- Projekt 1 -->
-        <div class="project-card">
+        <div class="project-card hidden">
           <h3>Jugend forscht – Mit Telegram zum Millionär</h3>
           <p class="project-desc">Automatisiertes Analyse- und Testsystem für Handelssignale aus Telegram-Tradinggruppen. Kritische Bewertung von Social-Media-Signalen und deren Nachhaltigkeit.</p>
           <ul class="result-list">
@@ -117,7 +139,7 @@
           </div>
         </div>
         <!-- Projekt 2 -->
-        <div class="project-card">
+        <div class="project-card hidden">
           <h3>KI-Experiment – Chrome Dino Game Agent</h3>
           <p class="project-desc">Prototypischer Agent für das Chrome Dino Game, umgesetzt mit PyTorch (Reinforcement Learning). Fokus auf Lernmechanismen und Modell-Training.</p>
           <ul class="result-list">
@@ -138,7 +160,7 @@
       </div>
     </section>
 
-    <section id="contact" class="section">
+    <section id="contact" class="section hidden">
       <h2>Kontakt</h2>
       <form id="contact-form" class="contact-form" action="https://formspree.io/f/mrbankko" method="POST">
         <input type="text" name="name" placeholder="Name" required>
@@ -149,13 +171,21 @@
       <p id="form-status"></p>
       <div class="contact-info">
         <p>E-Mail: <a href="mailto:theodor.mrozik@gmail.com">theodor.mrozik@gmail.com</a></p>
-        <p>LinkedIn: <a href="#" target="_blank">Profil ansehen</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/theodor-mrozik/" target="_blank">Profil ansehen</a></p>
+        <p>GitHub: <a href="https://github.com/Theodor-Mrozik" target="_blank">Profil ansehen</a></p>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <p>&copy; 2025 Theodor Mrozik</p>
+  <footer class="footer hidden">
+    <div class="footer-content">
+        <div class="footer-name">Theodor Mrozik</div>
+        <div class="footer-social-links">
+            <a href="https://github.com/Theodor-Mrozik" target="_blank" aria-label="GitHub" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="feather feather-github"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+            <a href="https://www.linkedin.com/in/theodor-mrozik/" target="_blank" aria-label="LinkedIn" title="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+        </div>
+        <p class="footer-copyright">&copy; 2025 Theodor Mrozik. Alle Rechte vorbehalten.</p>
+    </div>
   </footer>
 
   <script src="scripts/main.js"></script>

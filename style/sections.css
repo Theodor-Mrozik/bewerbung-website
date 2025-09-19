@@ -41,6 +41,13 @@
   gap: 32px;
   flex-wrap: wrap;
 }
+
+.about-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px; /* This now controls the space between the text and the button */
+}
+
 .profile-img {
   width: 120px;
   height: 120px;
@@ -50,7 +57,8 @@
 }
 
 .cv-btn {
-  margin-top: 256px;
+  /* No margin needed here anymore */
+  align-self: flex-start; /* Ensures button doesn't stretch */
 }
 
 .motivation-list {

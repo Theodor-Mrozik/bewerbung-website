@@ -11,7 +11,7 @@ Dies ist das offizielle Repository für meine persönliche Portfolio-Webseite, d
 *   **Dynamische Scroll-Animationen:** Inhalte werden beim Scrollen elegant eingeblendet, um die Nutzererfahrung zu verbessern.
 *   **Projekt-Showcase:** Meine Projekte werden in einem übersichtlichen Grid dargestellt. Für detaillierte Informationen öffnet sich ein modales Fenster (Case Study).
 *   **Kontaktformular:** Ein funktionierendes Kontaktformular, das über Formspree angebunden ist.
-*   **Easter Egg:** Ein kleiner Gruß an das HR-Team, versteckt im HTML-Code.
+*   **Easter Egg:** Ein kleiner Gruß an das HR-Team.
 
 ## 🛠️ Technologien
 

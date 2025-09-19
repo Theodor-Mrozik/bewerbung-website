@@ -103,6 +103,10 @@
   display: inline-block;
 }
 
+[data-theme="dark"] .skills-subtitle {
+  color: var(--main-color);
+}
+
 .skills-list {
   display: flex;
   flex-wrap: wrap;

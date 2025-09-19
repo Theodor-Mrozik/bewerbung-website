@@ -13,6 +13,10 @@
   position: sticky;
   top: 0;
   z-index: 10;
+  min-height: 80px;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .nav-actions { display: flex; align-items: center; gap: 10px; }
 .theme-toggle {
@@ -31,6 +35,20 @@
   font-size: 1.3rem;
   color: var(--main-color);
   letter-spacing: 1px;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  white-space: normal;
+}
+.nav-tagline {
+  font-size: 0.98rem;
+  font-weight: 500;
+  color: var(--accent-color);
+  margin-top: 2px;
+  line-height: 1.2;
+  letter-spacing: 0.2px;
+  white-space: normal;
 }
 .nav-links {
   display: flex;

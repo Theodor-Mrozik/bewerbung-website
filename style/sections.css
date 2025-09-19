@@ -88,7 +88,7 @@
   flex-wrap: wrap;
 }
 
-.skills-main, .skills-secondary {
+.skills-main {
   flex: 1;
   min-width: 250px;
 }

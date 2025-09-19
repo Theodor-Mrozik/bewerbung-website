@@ -21,6 +21,7 @@ html {
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
   font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  font-size: 1.08rem;
   background: var(--page-bg);
   color: var(--text-dark);
   line-height: 1.7;
@@ -31,6 +32,33 @@ a { color: var(--main-color); text-decoration: none; transition: color var(--tra
 a:hover { color: var(--accent-color); }
 #about, #skills, #projects, #contact {
   scroll-margin-top: 80px;
+}
+
+/* Buttons */
+button, .btn {
+  transition: box-shadow 0.2s, background 0.2s, color 0.2s;
+}
+button:hover, .btn:hover {
+  box-shadow: 0 2px 8px rgba(75,0,110,0.12);
+  background: var(--main-color);
+  color: #fff;
+}
+button:focus, .btn:focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+/* Project Cards */
+.project-card {
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.project-card:hover {
+  box-shadow: 0 6px 24px rgba(75,0,110,0.18);
+  transform: translateY(-4px) scale(1.02);
+}
+.project-card:focus-within {
+  outline: 2px solid var(--main-color);
+  outline-offset: 2px;
 }
 
 /* Dark mode */

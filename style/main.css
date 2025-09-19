@@ -34,6 +34,9 @@ a:hover { color: var(--accent-color); }
   --bg-light: #1d2026;
   --bg-white: #20242c;
   --text-dark: #f0f2f8;
-  --text-light: #c5c8d4;
+  --text-light: #d1d5e0;
   --shadow: 0 6px 24px rgba(0,0,0,0.28);
 }
+
+[data-theme="dark"] a { color: #ffb74d; }
+[data-theme="dark"] a:hover { color: var(--main-color); }

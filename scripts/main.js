@@ -37,8 +37,8 @@ if(navToggle && navLinks) {
   }
 
   const saved = localStorage.getItem('theme');
-  // Default to light mode unless the user explicitly saved a preference
-  const initial = saved ? saved : 'light';
+  // Default to dark mode unless the user explicitly saved a preference
+  const initial = saved ? saved : 'dark';
   applyTheme(initial);
 
   if (btn) {

@@ -25,6 +25,16 @@
   background: linear-gradient(90deg, var(--main-color), var(--accent-color));
   border-radius: 3px;
 }
+
+/* Facts strip */
+.facts { padding-top: 12px; padding-bottom: 12px; }
+.facts-list { display: flex; gap: 16px; list-style: none; flex-wrap: wrap; align-items: center; }
+.facts-list li { background: var(--bg-white); box-shadow: 0 1px 6px rgba(0,0,0,0.06); padding: 8px 12px; border-radius: 999px; color: var(--text-dark); font-weight: 600; }
+.facts-list li span { margin-right: 6px; }
+
+/* Project results bullets */
+.result-list { margin-top: -4px; margin-bottom: 6px; padding-left: 18px; color: var(--text-light); }
+.result-list li { margin: 4px 0; }
 .about-content {
   display: flex;
   align-items: center;

@@ -58,3 +58,27 @@ if(navToggle && navLinks) {
     });
   }
 })();
+
+// Contact form: open mail client with prefilled content
+(function() {
+  const form = document.querySelector('.contact-form');
+  if (!form) return;
+  const nameInput = form.querySelector('input[name="name"]');
+  const emailInput = form.querySelector('input[name="email"]');
+  const messageInput = form.querySelector('textarea[name="message"]');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = (nameInput?.value || '').trim();
+    const email = (emailInput?.value || '').trim();
+    const message = (messageInput?.value || '').trim();
+    if (!name || !email || !message) {
+      alert('Bitte Name, E-Mail und Nachricht ausfüllen.');
+      return;
+    }
+    const to = 'theodor.mrozik@gmail.com';
+    const subject = encodeURIComponent(`Kontakt über Bewerbung – ${name}`);
+    const body = encodeURIComponent(`Name: ${name}\nE-Mail: ${email}\n\nNachricht:\n${message}`);
+    const mailto = `mailto:${to}?subject=${subject}&body=${body}`;
+    window.location.href = mailto;
+  });
+})();

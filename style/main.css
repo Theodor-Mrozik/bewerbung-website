@@ -30,10 +30,10 @@ a:hover { color: var(--accent-color); }
 
 /* Dark mode */
 [data-theme="dark"] {
-  --page-bg: #0f0f13;
-  --bg-light: #15151c;
-  --bg-white: #161722;
-  --text-dark: #e8e8ef;
-  --text-light: #b6b6c6;
-  --shadow: 0 6px 28px rgba(0,0,0,0.35);
+  --page-bg: #16181d;
+  --bg-light: #1d2026;
+  --bg-white: #20242c;
+  --text-dark: #f0f2f8;
+  --text-light: #c5c8d4;
+  --shadow: 0 6px 24px rgba(0,0,0,0.28);
 }

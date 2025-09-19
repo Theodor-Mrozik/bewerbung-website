@@ -48,6 +48,32 @@
   border-radius: 50%;
   box-shadow: 0 2px 10px rgba(0,0,0,0.20);
 }
+
+.cv-btn {
+  margin-top: 16px;
+}
+
+.motivation-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.motivation-list li {
+  padding-left: 24px;
+  position: relative;
+}
+
+.motivation-list li::before {
+  content: '✓';
+  color: var(--main-color);
+  font-weight: 800;
+  position: absolute;
+  left: 0;
+}
+
 .skills-list {
   display: flex;
   flex-wrap: wrap;

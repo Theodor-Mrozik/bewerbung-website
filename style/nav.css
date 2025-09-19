@@ -14,6 +14,18 @@
   top: 0;
   z-index: 10;
 }
+.nav-actions { display: flex; align-items: center; gap: 10px; }
+.theme-toggle {
+  background: var(--bg-white);
+  border: 1px solid rgba(0,0,0,0.08);
+  color: var(--text-dark);
+  padding: 6px 10px;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
+}
+.theme-toggle:hover { border-color: var(--accent-color); }
 .nav-brand {
   font-weight: 700;
   font-size: 1.3rem;
@@ -75,7 +87,7 @@
   background: linear-gradient(120deg, var(--main-color), var(--accent-color));
   color: #fff;
   border-radius: var(--border-radius);
-  box-shadow: 0 8px 28px rgba(75,0,110,0.12);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.12);
 }
 .hero h1 {
   font-size: 2.2rem;

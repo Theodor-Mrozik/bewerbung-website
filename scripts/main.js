@@ -37,7 +37,8 @@ if(navToggle && navLinks) {
   }
 
   const saved = localStorage.getItem('theme');
-  const initial = saved ? saved : (prefersDark && prefersDark.matches ? 'dark' : 'light');
+  // Default to light mode unless the user explicitly saved a preference
+  const initial = saved ? saved : 'light';
   applyTheme(initial);
 
   if (btn) {
@@ -49,14 +50,8 @@ if(navToggle && navLinks) {
     });
   }
 
-  if (prefersDark && prefersDark.addEventListener) {
-    prefersDark.addEventListener('change', (e) => {
-      const savedTheme = localStorage.getItem('theme');
-      if (!savedTheme) {
-        applyTheme(e.matches ? 'dark' : 'light');
-      }
-    });
-  }
+  // Do not auto-switch with OS changes when no preference is saved;
+  // light remains the default unless the user toggles explicitly.
 })();
 
 // Contact form: open mail client with prefilled content

@@ -6,7 +6,7 @@
   --bg-white: #fff;
   --text-dark: #222;
   --text-light: #666;
-  --border-radius: 16px;
+  --border-radius: 14px;
   --shadow: 0 4px 24px rgba(75,0,110,0.10); /* purple shadow accent */
   --transition: 0.2s cubic-bezier(.4,0,.2,1);
   --max-width: 900px;
@@ -15,9 +15,9 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
   font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-  background: var(--bg-light);
+  background: #faf9fb; /* softer neutral to let accents pop */
   color: var(--text-dark);
-  line-height: 1.6;
+  line-height: 1.7;
 }
 img { max-width: 100%; display: block; border-radius: var(--border-radius); }
 a { color: var(--main-color); text-decoration: none; transition: color var(--transition); }

@@ -50,6 +50,9 @@
   letter-spacing: 0.2px;
   white-space: normal;
 }
+[data-theme="dark"] .nav-tagline {
+  color: #fff;
+}
 .nav-links {
   display: flex;
   gap: 32px;
@@ -81,6 +84,10 @@
 .nav-links li a:hover,
 .nav-links li a.active {
   border-color: var(--accent-color);
+}
+[data-theme="dark"] .nav-links li a:hover,
+[data-theme="dark"] .nav-links li a.active {
+  border-color: #fff;
 }
 .nav-toggle {
   display: none;

@@ -16,7 +16,7 @@
   border: 2px solid transparent;
 }
 .project-card:hover {
-  box-shadow: 0 8px 32px rgba(31,182,255,0.12);
+  box-shadow: 0 8px 32px rgba(75,0,110,0.15);
   border-color: var(--accent-color);
   transform: translateY(-4px) scale(1.02);
 }
@@ -51,7 +51,7 @@
   margin-top: 8px;
 }
 .btn {
-  background: var(--accent-color);
+  background: var(--main-color);
   color: #fff;
   padding: 8px 20px;
   border-radius: 24px;
@@ -63,8 +63,8 @@
   transition: background var(--transition), box-shadow var(--transition), transform var(--transition);
 }
 .btn:hover {
-  background: #00bcd4;
-  box-shadow: 0 4px 16px rgba(31,182,255,0.18);
+  background: var(--accent-color);
+  box-shadow: 0 4px 16px rgba(75,0,110,0.18);
   transform: translateY(-2px) scale(1.04);
 }
 .btn-outline {
@@ -74,6 +74,6 @@
   box-shadow: none;
 }
 .btn-outline:hover {
-  background: var(--accent-color);
+  background: var(--main-color);
   color: #fff;
 }

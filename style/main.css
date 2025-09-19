@@ -1,13 +1,13 @@
 /* Basis-Styles, Farben, Layout */
 :root {
-  --main-color: #1fb6ff;
-  --accent-color: #0099a8;
+  --main-color: #ff8800; /* Orange */
+  --accent-color: #4B006E; /* Dark Purple */
   --bg-light: #f8fafc;
   --bg-white: #fff;
   --text-dark: #222;
   --text-light: #666;
   --border-radius: 16px;
-  --shadow: 0 4px 24px rgba(31,182,255,0.08);
+  --shadow: 0 4px 24px rgba(75,0,110,0.10); /* purple shadow accent */
   --transition: 0.2s cubic-bezier(.4,0,.2,1);
   --max-width: 900px;
   --nav-height: 64px;

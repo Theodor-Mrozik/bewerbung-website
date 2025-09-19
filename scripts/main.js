@@ -54,26 +54,43 @@ if(navToggle && navLinks) {
   // light remains the default unless the user toggles explicitly.
 })();
 
-// Contact form: open mail client with prefilled content
-(function() {
-  const form = document.querySelector('.contact-form');
-  if (!form) return;
-  const nameInput = form.querySelector('input[name="name"]');
-  const emailInput = form.querySelector('input[name="email"]');
-  const messageInput = form.querySelector('textarea[name="message"]');
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const name = (nameInput?.value || '').trim();
-    const email = (emailInput?.value || '').trim();
-    const message = (messageInput?.value || '').trim();
-    if (!name || !email || !message) {
-      alert('Bitte Name, E-Mail und Nachricht ausfüllen.');
-      return;
+// Contact form: AJAX submission to Formspree
+async function handleFormSubmit(event) {
+  event.preventDefault();
+  const form = event.target;
+  const data = new FormData(form);
+  const status = document.getElementById("form-status");
+  
+  try {
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      status.innerHTML = "Danke für Ihre Nachricht!";
+      status.className = 'success';
+      form.reset();
+    } else {
+      const responseData = await response.json();
+      if (Object.hasOwn(responseData, 'errors')) {
+        status.innerHTML = responseData["errors"].map(error => error["message"]).join(", ");
+        status.className = 'error';
+      } else {
+        status.innerHTML = "Oops! Da ist etwas schiefgelaufen.";
+        status.className = 'error';
+      }
     }
-    const to = 'theodor.mrozik@gmail.com';
-    const subject = encodeURIComponent(`Kontakt über Bewerbung – ${name}`);
-    const body = encodeURIComponent(`Name: ${name}\nE-Mail: ${email}\n\nNachricht:\n${message}`);
-    const mailto = `mailto:${to}?subject=${subject}&body=${body}`;
-    window.location.href = mailto;
-  });
-})();
+  } catch (error) {
+    status.innerHTML = "Oops! Da ist etwas schiefgelaufen.";
+    status.className = 'error';
+  }
+}
+
+const form = document.getElementById("contact-form");
+if (form) {
+  form.addEventListener("submit", handleFormSubmit);
+}

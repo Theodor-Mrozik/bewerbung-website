@@ -63,8 +63,8 @@ button:focus, .btn:focus {
 
 /* Dark mode */
 [data-theme="dark"] {
-  --page-bg: #1a1530;
-  --bg-light: #221a3a;
+  --page-bg: #16181d;
+  --bg-light: #1d2026;
   --bg-white: #20242c;
   --text-dark: #f0f2f8;
   --text-light: #d1d5e0;

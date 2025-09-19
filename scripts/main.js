@@ -129,3 +129,50 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+// Modal (Pop-up) Logic
+const openModalButtons = document.querySelectorAll('[data-modal-open]');
+const closeModalButtons = document.querySelectorAll('[data-modal-close]');
+
+openModalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modalId = button.dataset.modalOpen;
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      openModal(modal);
+    }
+  });
+});
+
+closeModalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = button.closest('.modal');
+    if (modal) {
+      closeModal(modal);
+    }
+  });
+});
+
+function openModal(modal) {
+  if (modal == null) return;
+  modal.classList.add('is-open');
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden'; // Prevent background scrolling
+}
+
+function closeModal(modal) {
+  if (modal == null) return;
+  modal.classList.remove('is-open');
+  modal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = 'auto'; // Restore scrolling
+}
+
+// Close modal on Escape key press
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    const openModal = document.querySelector('.modal.is-open');
+    if (openModal) {
+      closeModal(openModal);
+    }
+  }
+});

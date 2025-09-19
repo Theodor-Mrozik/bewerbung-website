@@ -33,6 +33,7 @@
   <link rel="stylesheet" href="style/sections.css">
   <link rel="stylesheet" href="style/cards.css">
   <link rel="stylesheet" href="style/footer.css">
+  <link rel="stylesheet" href="style/modal.css">
 </head>
 <body>
   <nav class="navbar">
@@ -82,28 +83,41 @@
       <h2>Warum Aumovio?</h2>
       <ul class="motivation-list">
         <li>
-          <strong>Begeisterung für die Domäne:</strong> Mein Interesse an autonomen Systemen und hochwertiger Software im Automotive-Bereich motiviert mich, bei einem Technologieführer wie Aumovio zu lernen.
+          <strong>Faszination für Automotive Software:</strong> Meine Begeisterung für autonome Systeme und die Entwicklung hochzuverlässiger Software treibt mich an. Aumovio, als Technologieführer in diesem Bereich, ist für mich die ideale Umgebung, um meine Fähigkeiten einzubringen und zu erweitern.
         </li>
         <li>
-          <strong>Praxisbezug und Datenpipelines:</strong> Die im Jugend forscht-Projekt gesammelte Erfahrung in der automatisierten Analyse und im Backtesting möchte ich nun auf robuste Datenpipelines in realen Anwendungen übertragen.
+          <strong>Von der Theorie zur Praxis:</strong> Im "Jugend forscht"-Projekt habe ich durch die automatisierte Analyse von Datenströmen gelernt, wie wichtig robuste und skalierbare Datenpipelines sind. Diese praktische Erfahrung möchte ich nun nutzen, um bei der Entwicklung realer Automotive-Anwendungen mitzuwirken.
         </li>
         <li>
-          <strong>Kultureller Einblick:</strong> Durch einen Freund im gleichen dualen Studium habe ich bereits positive Einblicke in die Teamkultur und die spannenden Herausforderungen bei Aumovio erhalten.
+          <strong>Kultur und Empfehlung:</strong> Der positive Einblick in die Teamkultur und die anspruchsvollen Projekte, den ich durch einen Freund im gleichen dualen Studium bei Aumovio erhalten habe, bestärkt meinen Wunsch, Teil Ihres Teams zu werden.
         </li>
       </ul>
     </section>
 
     <section id="skills" class="section hidden">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>Python (Pandas, NumPy, PyTorch)</li>
-        <li>Machine Learning & KI</li>
-        <li>Datenanalyse & Visualisierung</li>
-        <li>Webentwicklung (HTML, CSS, JavaScript)</li>
-        <li>Git & GitHub</li>
-        <li>VS Code</li>
-        <li>Präsentation & Kommunikation</li>
-      </ul>
+      <h2>Skills &amp; Technologien</h2>
+      <div class="skills-container">
+        <div class="skills-main">
+          <h3 class="skills-subtitle">Angewendet</h3>
+          <ul class="skills-list">
+            <li>Python (Pandas, NumPy, PyTorch)</li>
+            <li>Machine Learning &amp; KI-Grundlagen</li>
+            <li>Datenanalyse &amp; Visualisierung</li>
+            <li>Webentwicklung (HTML, CSS, JavaScript)</li>
+            <li>Git &amp; GitHub</li>
+            <li>VS Code</li>
+            <li>Präsentation &amp; Kommunikation</li>
+          </ul>
+        </div>
+        <div class="skills-secondary">
+          <h3 class="skills-subtitle">Currently Learning</h3>
+          <ul class="skills-list">
+            <li>C++ für Embedded Systems</li>
+            <li>Advanced Deep Learning</li>
+            <li>Cloud-Technologien (AWS/Azure)</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section id="education" class="section hidden">
@@ -122,9 +136,9 @@
         <!-- Projekt 1 -->
         <div class="project-card hidden">
           <h3>Jugend forscht – Mit Telegram zum Millionär</h3>
-          <p class="project-desc">Automatisiertes Analyse- und Testsystem für Handelssignale aus Telegram-Tradinggruppen. Kritische Bewertung von Social-Media-Signalen und deren Nachhaltigkeit.</p>
+          <p class="project-desc">Automatisiertes Analyse- und Testsystem für Handelssignale aus Telegram-Tradinggruppen. Kritische Bewertung von Social-Media-Signalen.</p>
           <ul class="result-list">
-            <li>Einladung der Universität Hannover zu einem Vortrag vor Lehrkräften</li>
+            <li>Einladung der Universität Hannover zu einem Vortrag</li>
             <li>Backtesting-Workflow prototypisch umgesetzt</li>
             <li>Vergleich von Signal-Qualität über mehrere Kanäle</li>
           </ul>
@@ -136,6 +150,7 @@
           </ul>
           <div class="project-links">
             <a href="\JugendForscht_TheodorMrozik.pdf" class="btn" target="_blank">PDF</a>
+            <button class="btn btn-outline" data-modal-open="jufomi">Mehr erfahren</button>
           </div>
         </div>
         <!-- Projekt 2 -->
@@ -143,14 +158,14 @@
           <h3>KI-Experiment – Chrome Dino Game Agent</h3>
           <p class="project-desc">Prototypischer Agent für das Chrome Dino Game, umgesetzt mit PyTorch (Reinforcement Learning). Fokus auf Lernmechanismen und Modell-Training.</p>
           <ul class="result-list">
-            <li>Automatisierte Steuerung und Zustandsverarbeitung aufgebaut</li>
-            <li>Erste Experimente mit Lern- und Timing-Strategien</li>
+            <li>Automatisierte Steuerung und Zustandsverarbeitung</li>
+            <li>Experimente mit Lern- und Timing-Strategien</li>
           </ul>
           <ul class="tech-list">
             <li>Python</li>
             <li>PyTorch</li>
             <li>Machine Learning</li>
-            <li>OpenAI Gym (Experimentell)</li>
+            <li>OpenAI Gym</li>
           </ul>
           <div class="project-links">
             <a href="\JugendForscht_TheodorMrozik.pdf" class="btn" target="_blank">PDF</a>
@@ -175,6 +190,21 @@
       </div>
     </section>
   </main>
+
+  <div class="modal" id="jufomi" aria-hidden="true">
+    <div class="modal-overlay" tabindex="-1" data-modal-close></div>
+    <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" aria-label="Schließen" data-modal-close>✕</button>
+      <div class="modal-header">
+        <h2 class="modal-title" id="modal-title">Case Study: Analyse von Trading-Signalen</h2>
+      </div>
+      <div class="modal-content">
+        <p><strong>Die Herausforderung:</strong> Trading-Gruppen auf Telegram versprechen hohe Gewinne, doch die Qualität der Signale ist oft unklar. Ziel war es, ein System zu entwickeln, das die Performance dieser Signale objektiv misst und bewertet.</p>
+        <p><strong>Meine Lösung:</strong> Ich habe ein Python-basiertes System entwickelt, das über die Telegram-API (Telethon) Nachrichten aus verschiedenen Kanälen in Echtzeit ausliest. Ein Parser extrahiert Handelsinformationen (z.B. "Kaufe X bei Y"), die dann in einer Datenbank gespeichert werden. Ein Backtesting-Modul simuliert die Trades auf Basis historischer Kursdaten und berechnet Kennzahlen wie Profit-Faktor und Trefferquote.</p>
+        <p><strong>Das Ergebnis:</strong> Das System konnte die Profitabilität verschiedener Signalanbieter quantifizieren und zeigte, dass die meisten die beworbenen Renditen nicht nachhaltig erzielen. Dieses Ergebnis und die technische Umsetzung führten zu einer Einladung der Universität Hannover, das Projekt im Rahmen einer Lehrerfortbildung vorzustellen.</p>
+      </div>
+    </div>
+  </div>
 
   <footer class="footer hidden">
     <div class="footer-content">
